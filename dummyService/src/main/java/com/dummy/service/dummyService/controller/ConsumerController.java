@@ -15,6 +15,9 @@ public class ConsumerController {
     @Autowired
     UserRestConsumer restConsumer;
 
+    @Autowired
+    AuthenticationConsumer authenticationConsumer;
+
 //    public ConsumerController(UserRestConsumer restConsumer){
 //        this.restConsumer = restConsumer;
 //    }
@@ -30,6 +33,9 @@ public class ConsumerController {
     public String signup(@RequestBody User user){
         return restConsumer.signup(user);
     }
-
+    @GetMapping("/get-token")
+    String createToken(int id){
+        return "Created Token is "+authenticationConsumer.createToken(id);
+    }
 
 }

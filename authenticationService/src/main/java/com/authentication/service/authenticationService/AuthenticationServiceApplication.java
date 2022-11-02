@@ -9,7 +9,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 // enables this service to zuul server ,
 // enabling eureka client to be discoverable,
 // feign for intelligent routing of clients/services
-@EnableZuulProxy
 @EnableEurekaClient
 @EnableFeignClients
 @SpringBootApplication
