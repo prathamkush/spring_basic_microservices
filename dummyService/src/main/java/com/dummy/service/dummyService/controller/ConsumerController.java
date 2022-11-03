@@ -1,7 +1,6 @@
 package com.dummy.service.dummyService.controller;
 
 
-import com.dummy.service.dummyService.model.User;
 import com.netflix.discovery.converters.Auto;
 import feign.Param;
 import org.springframework.beans.factory.annotation.Autowired;
